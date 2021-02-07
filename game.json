@@ -1,0 +1,354 @@
+{
+  "passages": [
+    {
+      "text": "You are stood in the middle of a theme park entrance. If you stand for a second, you might catch something. (after:5s)[The smell of popcorn and sounds of roller coasters fill your senses.]\n[[Look West -> Popcorn]]\n[[Look North -> Front Gates]]\n[[Look East -> Ticket Booth]]\n[[Look South -> Winding Passage]]",
+      "links": [
+        {
+          "name": "Look West",
+          "link": " Popcorn",
+          "pid": "2"
+        },
+        {
+          "name": "Look North",
+          "link": " Front Gates",
+          "pid": "3"
+        },
+        {
+          "name": "Look East",
+          "link": " Ticket Booth",
+          "pid": "4"
+        },
+        {
+          "name": "Look South",
+          "link": " Winding Passage",
+          "pid": "5"
+        }
+      ],
+      "name": "Entrance",
+      "pid": "1",
+      "position": {
+        "x": "904",
+        "y": "92"
+      }
+    },
+    {
+      "text": "There is an overwhelming smell of artificial butter and popcorn. It seems as if no one is working the machine though. No sign of popcorn, but the smell somehow lingers.\n[[Return to Entrance ->Entrance]]",
+      "links": [
+        {
+          "name": "Return to Entrance",
+          "link": "Entrance",
+          "pid": "1"
+        }
+      ],
+      "name": "Popcorn",
+      "pid": "2",
+      "position": {
+        "x": "300",
+        "y": "295"
+      }
+    },
+    {
+      "text": "You walk up to the front gates. A sign above the gates reads: \n#FUNLAND \nThe gates are slightly parted and seem to be pushable.\n[[Enter -> Enter without Ticket]]\n[[Find a ticket first -> Ticket Journey]]",
+      "links": [
+        {
+          "name": "Enter",
+          "link": "Enter without Ticket",
+          "pid": "8"
+        },
+        {
+          "name": "Find a ticket first",
+          "link": "Ticket Journey",
+          "pid": "9"
+        }
+      ],
+      "name": "Front Gates",
+      "pid": "3",
+      "position": {
+        "x": "698",
+        "y": "293"
+      }
+    },
+    {
+      "text": "You see a red ticket booth with no one inside. There is a ticket hanging by a string on the booth. Would you like to take the ticket?\n[[Take -> Ticket Taken]]\n[[Leave it -> Ticket Journey]]",
+      "links": [
+        {
+          "name": "Take",
+          "link": "Ticket Taken",
+          "pid": "7"
+        },
+        {
+          "name": "Leave it",
+          "link": "Ticket Journey",
+          "pid": "9"
+        }
+      ],
+      "name": "Ticket Booth",
+      "pid": "4",
+      "position": {
+        "x": "1101",
+        "y": "292"
+      }
+    },
+    {
+      "text": "You see a winding passage in the distance. This is most likely how you ended up arriving at your current destination. (after:5s)[You've been standing here for a while...](after:10s)[It's been 10 seconds...]\n[[Return to Entrance ->Entrance]]\n[[Investigate Further -> Investigation]]",
+      "links": [
+        {
+          "name": "Return to Entrance",
+          "link": "Entrance",
+          "pid": "1"
+        },
+        {
+          "name": "Investigate Further",
+          "link": "Investigation",
+          "pid": "6"
+        }
+      ],
+      "name": "Winding Passage",
+      "pid": "5",
+      "position": {
+        "x": "1500",
+        "y": "299"
+      }
+    },
+    {
+      "text": "Oddly, there are no visible footprints on the winding passage. It is unknown how you have appeared in such a peculiar place. Nothing else seems to stick out.\n[[Return to Entrance ->Entrance]] ",
+      "links": [
+        {
+          "name": "Return to Entrance",
+          "link": "Entrance",
+          "pid": "1"
+        }
+      ],
+      "name": "Investigation",
+      "pid": "6",
+      "position": {
+        "x": "1395",
+        "y": "497"
+      }
+    },
+    {
+      "text": "You now have the theme park ticket.\n[[Enter ->Enter with Ticket]]\n[[Return ->Entrance]]",
+      "links": [
+        {
+          "name": "Enter",
+          "link": "Enter with Ticket",
+          "pid": "11"
+        },
+        {
+          "name": "Return",
+          "link": "Entrance",
+          "pid": "1"
+        }
+      ],
+      "name": "Ticket Taken",
+      "pid": "7",
+      "position": {
+        "x": "1200",
+        "y": "495"
+      }
+    },
+    {
+      "text": "You enter the theme park through the front gates without a ticket in hand. Even though you can hear the excited screams of passengers on roller coasters, none of the rides seem to be operating.\n[[Go Back and Find Ticket -> Ticket Journey]] ",
+      "links": [
+        {
+          "name": "Go Back and Find Ticket",
+          "link": "Ticket Journey",
+          "pid": "9"
+        }
+      ],
+      "name": "Enter without Ticket",
+      "pid": "8",
+      "position": {
+        "x": "500",
+        "y": "499"
+      }
+    },
+    {
+      "text": "You are back at the entrance of the theme park without a ticket.\n[[Look West -> Popcorn]]\n[[Look North -> Front Gates 2]]\n[[Look East -> Ticket Booth]]\n[[Look South -> Winding Passage]]",
+      "links": [
+        {
+          "name": "Look West",
+          "link": "Popcorn",
+          "pid": "2"
+        },
+        {
+          "name": "Look North",
+          "link": "Front Gates 2",
+          "pid": "10"
+        },
+        {
+          "name": "Look East",
+          "link": "Ticket Booth",
+          "pid": "4"
+        },
+        {
+          "name": "Look South",
+          "link": "Winding Passage",
+          "pid": "5"
+        }
+      ],
+      "name": "Ticket Journey",
+      "pid": "9",
+      "position": {
+        "x": "821",
+        "y": "499"
+      }
+    },
+    {
+      "text": "You still don't have a ticket. Didn't you want to find it?\n[[Enter Anyway -> Enter without Ticket]] \n[[Keep Looking -> Ticket Journey]] ",
+      "links": [
+        {
+          "name": "Enter Anyway",
+          "link": "Enter without Ticket",
+          "pid": "8"
+        },
+        {
+          "name": "Keep Looking",
+          "link": "Ticket Journey",
+          "pid": "9"
+        }
+      ],
+      "name": "Front Gates 2",
+      "pid": "10",
+      "position": {
+        "x": "799",
+        "y": "698"
+      }
+    },
+    {
+      "text": "Congratulations! You enter the theme park through the front gates with a ticket in hand. Fun carnival sounding music blasts through the speakers and roller coasters zip and zoom on steel tracks all around. You can hear the excited screams of passengers on roller coasters, all of which seem to be operating at full capacity.\n[[Look North->Sign]]\n[[Look East->Ride1]]\n[[Look West->Ride2]]",
+      "links": [
+        {
+          "name": "Look North",
+          "link": "Sign",
+          "pid": "13"
+        },
+        {
+          "name": "Look East",
+          "link": "Ride1",
+          "pid": "14"
+        },
+        {
+          "name": "Look West",
+          "link": "Ride2",
+          "pid": "15"
+        }
+      ],
+      "name": "Enter with Ticket",
+      "pid": "11",
+      "position": {
+        "x": "1101",
+        "y": "700"
+      }
+    },
+    {
+      "text": "You can go in now that you have the ticket. There is not much else to do otherwise.\n[[Return to Entrance -> Ticket Taken]] ",
+      "links": [
+        {
+          "name": "Return to Entrance",
+          "link": " Ticket Taken",
+          "pid": "7"
+        }
+      ],
+      "name": "Not entering",
+      "pid": "12",
+      "position": {
+        "x": "1295",
+        "y": "697"
+      }
+    },
+    {
+      "text": "There is a sign with arrows and names of what might be rides.\n##SpinMaster ->\n##PhantomPlunge <-\n[[Return->return]]",
+      "links": [
+        {
+          "name": "Return",
+          "link": "return",
+          "pid": "16"
+        }
+      ],
+      "name": "Sign",
+      "pid": "13",
+      "position": {
+        "x": "798",
+        "y": "899"
+      }
+    },
+    {
+      "text": "There's a ride here that's called SpinMaster. It's just a huge wheel with seats. It seems to be spinning rather fast. You get a bit nauseous just looking at it. Even though it looks fun, the line is backed up all the way to the entrance.\n[[Return->return]]",
+      "links": [
+        {
+          "name": "Return",
+          "link": "return",
+          "pid": "16"
+        }
+      ],
+      "name": "Ride1",
+      "pid": "14",
+      "position": {
+        "x": "1101",
+        "y": "900"
+      }
+    },
+    {
+      "text": "There's a ride here called PhantomPlunge. It's a towering roller coaster that seemingly plummets into nothingness. It looks pretty intense. Unfortunately, the line is full and would take ages to wait.\n[[Return->return]]",
+      "links": [
+        {
+          "name": "Return",
+          "link": "return",
+          "pid": "16"
+        }
+      ],
+      "name": "Ride2",
+      "pid": "15",
+      "position": {
+        "x": "1401",
+        "y": "899"
+      }
+    },
+    {
+      "text": "You are back at the entrance. You can still hear the excited screams of passengers on roller coasters, all of which seem to be operating at full capacity.\n[[Look North->Sign]]\n[[Look East->Ride1]]\n[[Look West->Ride2]]\n[[Exit->ENDING]]",
+      "links": [
+        {
+          "name": "Look North",
+          "link": "Sign",
+          "pid": "13"
+        },
+        {
+          "name": "Look East",
+          "link": "Ride1",
+          "pid": "14"
+        },
+        {
+          "name": "Look West",
+          "link": "Ride2",
+          "pid": "15"
+        },
+        {
+          "name": "Exit",
+          "link": "ENDING",
+          "pid": "17"
+        }
+      ],
+      "name": "return",
+      "pid": "16",
+      "position": {
+        "x": "1101",
+        "y": "1099.5"
+      }
+    },
+    {
+      "text": "I hope you enjoyed your stay at Funland! Sorry the lines for the rides were way too long for you to ride anything, but thanks for stopping by!",
+      "name": "ENDING",
+      "pid": "17",
+      "position": {
+        "x": "1101",
+        "y": "1299.5"
+      }
+    }
+  ],
+  "name": "FunLand",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.11",
+  "ifid": "7DECBD7A-1EE2-4CD6-8CD2-DD3013F6DEC2"
+}
